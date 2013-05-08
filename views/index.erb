@@ -1,0 +1,10 @@
+<h1>Notes</h1>
+<ul>
+<% @notes.each do |note| %>
+  <li>
+    <h2><a href="/note/<%= note.id %>"><%= note.title %></a></h2>
+    <p><%= note.body %></p>
+  </li>
+<% end %>
+</ul>
+<a href="/new">New note</a>
